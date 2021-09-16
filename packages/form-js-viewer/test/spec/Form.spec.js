@@ -440,54 +440,58 @@ describe('Form', function() {
   });
 
 
-  it('should not submit disabled fields', async function() {
+  describe('disabled fields', function() {
 
-    // given
-    const data = {
-      amount: 456,
-      invoiceNumber: 'C-123',
-      approved: true,
-      approvedBy: 'John Doe'
-    };
+    it('should not submit', async function() {
 
-    // when
-    const form = await createForm({
-      container,
-      data,
-      schema: disabledSchema
+      // given
+      const data = {
+        amount: 456,
+        invoiceNumber: 'C-123',
+        approved: true,
+        approvedBy: 'John Doe'
+      };
+
+      // when
+      const form = await createForm({
+        container,
+        data,
+        schema: disabledSchema
+      });
+
+      // when
+      const submission = form.submit();
+
+      // then
+      expect(submission.data).not.to.have.property('creditor');
+      expect(submission.errors).not.to.have.property('creditor');
     });
 
-    // when
-    const submission = form.submit();
 
-    // then
-    expect(submission.data).not.to.have.property('creditor');
-    expect(submission.errors).not.to.have.property('creditor');
-  });
+    it('should not validate', async function() {
 
+      // given
+      const data = {
+        amount: 456,
+        invoiceNumber: 'C-123',
+        approved: true,
+        approvedBy: 'John Doe'
+      };
 
-  it('should not validate disabled fields', async function() {
+      // when
+      const form = await createForm({
+        container,
+        data,
+        schema: disabledSchema
+      });
 
-    // given
-    const data = {
-      amount: 456,
-      invoiceNumber: 'C-123',
-      approved: true,
-      approvedBy: 'John Doe'
-    };
+      // when
+      const errors = form.validate();
 
-    // when
-    const form = await createForm({
-      container,
-      data,
-      schema: disabledSchema
+      // then
+      expect(errors).not.to.have.property('creditor');
     });
 
-    // when
-    const errors = form.validate();
-
-    // then
-    expect(errors).not.to.have.property('creditor');
   });
 
 
@@ -631,38 +635,42 @@ describe('Form', function() {
   });
 
 
-  it('should reset (no data)', async function() {
+  describe('reset', function() {
 
-    // when
-    const form = await createForm({
-      container,
-      schema
+    it('should reset without data', async function() {
+
+      // when
+      const form = await createForm({
+        container,
+        schema
+      });
+
+      // update programmatically
+      form._update({
+        field: getFormField(form, 'creditor'),
+        value: 'Jane Doe Company'
+      });
+
+      form._update({
+        field: getFormField(form, 'amount'),
+        value: '123'
+      });
+
+      form._update({
+        field: getFormField(form, 'approved'),
+        value: true
+      });
+
+      // when
+      form.reset();
+
+      // then
+      const state = form._getState();
+
+      expect(state.data).to.be.empty;
+      expect(state.errors).to.be.empty;
     });
 
-    // update programmatically
-    form._update({
-      field: getFormField(form, 'creditor'),
-      value: 'Jane Doe Company'
-    });
-
-    form._update({
-      field: getFormField(form, 'amount'),
-      value: '123'
-    });
-
-    form._update({
-      field: getFormField(form, 'approved'),
-      value: true
-    });
-
-    // when
-    form.reset();
-
-    // then
-    const state = form._getState();
-
-    expect(state.data).to.be.empty;
-    expect(state.errors).to.be.empty;
   });
 
 
