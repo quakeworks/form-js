@@ -30,7 +30,7 @@ export default function Select(props) {
   const onChange = ({ target }) => {
     props.onChange({
       field,
-      value: target.value === '' ? undefined : target.value
+      value: target.value === '' ? null : target.value
     });
   };
 
