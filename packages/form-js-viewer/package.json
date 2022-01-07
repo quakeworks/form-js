@@ -38,7 +38,7 @@
     "url": "https://github.com/bpmn-io"
   },
   "dependencies": {
-    "@quakeworks/snarkdown": "^2.1.0",
+    "@bpmn-io/snarkdown": "^2.1.0",
     "didi": "^5.2.1",
     "ids": "^1.0.0",
     "min-dash": "^3.7.0",
