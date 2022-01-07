@@ -2,7 +2,7 @@ import { Group } from '../components';
 
 import {
   IdEntry,
-  LabelEntry,
+  KeyEntry
 } from '../entries';
 
 import { INPUTS } from '../Util';
@@ -17,20 +17,19 @@ export default function GeneralGroup(field, editField) {
   }
 
   if (INPUTS.includes(type) || type === 'Bool') {
-    entries.push(<LabelEntry editField={ editField } field={ field } />);
+    entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
   if (type === 'Content') {
-    entries.push(<IdEntry editField={ editField } field={ field } />);
+    entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
   if (type === 'String') {
-    entries.push(<IdEntry editField={ editField } field={ field } />);
+    entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
-  console.log(type)
-  if (type === 'Number' || type === 'File' || type === 'Date' || type === 'Attachment') {
-    entries.push(<IdEntry editField={ editField } field={ field } />);
+  if (type === 'Number' || type === 'File' || type === 'Date' || type === 'Attachment' || type === 'Flow') {
+    entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
   return (
