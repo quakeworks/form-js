@@ -26,6 +26,10 @@ export default function GeneralGroup(field, editField) {
     entries.push(<LabelEntry editField={ editField } field={ field } />);
   }
 
+  if (INPUTS.includes(type) || type === 'Bool') {
+    entries.push(<LabelEntry editField={ editField } field={ field } />);
+  }
+
   if (INPUTS.includes(type)) {
     entries.push(<DescriptionEntry editField={ editField } field={ field } />);
   }

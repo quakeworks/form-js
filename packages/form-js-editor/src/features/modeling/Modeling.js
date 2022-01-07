@@ -11,7 +11,6 @@ import { isObject } from 'min-dash';
 export default class Modeling {
   constructor(commandStack, eventBus, formEditor, formFieldRegistry, fieldFactory) {
     this._commandStack = commandStack;
-    this._formEditor = formEditor;
     this._formFieldRegistry = formFieldRegistry;
     this._fieldFactory = fieldFactory;
 
@@ -38,7 +37,7 @@ export default class Modeling {
   }
 
   addFormField(attrs, targetFormField, targetIndex) {
-
+    console.log(attrs);
     const formField = this._fieldFactory.create(attrs);
 
     const context = {

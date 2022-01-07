@@ -11,32 +11,27 @@ import {
   prefixId
 } from '../Util';
 
-const type = 'number';
+const type = 'Bool';
 
 
-export default function Number(props) {
+export default function Bool(props) {
   const {
     disabled,
     errors = [],
     field,
-    value
+    value = false
   } = props;
 
   const {
     description,
     id,
-    label,
-    validate = {}
+    label
   } = field;
 
-  const { required } = validate;
-
   const onChange = ({ target }) => {
-    const parsedValue = parseInt(target.value, 10);
-
     props.onChange({
       field,
-      value: isNaN(parsedValue) ? undefined : parsedValue
+      value: target.checked
     });
   };
 
@@ -46,25 +41,26 @@ export default function Number(props) {
     <Label
       id={ prefixId(id, formId) }
       label={ label }
-      required={ required } />
-    <input
-      class="fjs-input"
-      disabled={ disabled }
-      id={ prefixId(id, formId) }
-      onInput={ onChange }
-      type="number"
-      value={ value || '' } />
+      required={ false }>
+      <input
+        checked={ value }
+        class="fjs-input"
+        disabled={ disabled }
+        id={ prefixId(id, formId) }
+        type="checkbox"
+        onChange={ onChange } />
+    </Label>
     <Description description={ description } />
     <Errors errors={ errors } />
   </div>;
 }
 
-Number.create = function(options = {}) {
+Bool.create = function(options = {}) {
   return {
     ...options
   };
 };
 
-Number.type = type;
-Number.keyed = true;
-Number.label = 'Number';
+Bool.type = type;
+Bool.label = 'Bool';
+Bool.keyed = true;

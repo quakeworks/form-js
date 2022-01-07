@@ -8,6 +8,8 @@ import Select from './form-fields/Select';
 import Text from './form-fields/Text';
 import Textfield from './form-fields/Textfield';
 
+import Bool from './form-fields/Bool';
+
 export {
   Button,
   Checkbox,
@@ -17,7 +19,8 @@ export {
   Radio,
   Select,
   Text,
-  Textfield
+  Textfield,
+  Bool
 };
 
 export const formFields = [
@@ -28,5 +31,6 @@ export const formFields = [
   Radio,
   Select,
   Text,
-  Textfield
+  Textfield,
+  Bool
 ];
