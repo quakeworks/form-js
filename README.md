@@ -1,5 +1,6 @@
 # @quakeworks/form-js
 
+
 [![CI](https://github.com/bpmn-io/form-js/workflows/CI/badge.svg)](https://github.com/bpmn-io/form-js/actions?query=workflow%3ACI)
 
 [View](./packages/form-js-viewer) and [visually edit](./packages/form-js-editor) JSON-based forms.
@@ -45,15 +46,6 @@ await formEditor.importSchema(schema);
 ```
 
 See [editor documentation](./packages/form-js-editor) for further details.
-
-
-## Resources
-
-* [Demo](https://demo.bpmn.io/form)
-* [Issues](https://github.com/bpmn-io/form-js/issues)
-* [Changelog](./packages/form-js/CHANGELOG.md)
-* [Form schema](./docs/FORM_SCHEMA.md)
-
 
 ## License
 
