@@ -22,11 +22,19 @@ export default function GeneralGroup(field, editField) {
     entries.push(<IdEntry editField={ editField } field={ field } />);
   }
 
-  if (INPUTS.includes(type) || type === 'button') {
+  if (INPUTS.includes(type) || type === 'Bool') {
     entries.push(<LabelEntry editField={ editField } field={ field } />);
   }
 
-  if (INPUTS.includes(type) || type === 'Bool') {
+  if (type === 'Content') {
+    entries.push(<IdEntry editField={ editField } field={ field } />);
+  }
+
+  if (type === 'Number') {
+    entries.push(<IdEntry editField={ editField } field={ field } />);
+  }
+
+  if (INPUTS.includes(type) || type === 'button') {
     entries.push(<LabelEntry editField={ editField } field={ field } />);
   }
 

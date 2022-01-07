@@ -11,7 +11,7 @@ import {
   prefixId
 } from '../Util';
 
-const type = 'number';
+const type = 'Number';
 
 
 export default function Number(props) {

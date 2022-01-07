@@ -4,9 +4,7 @@ import {
   useDebounce
 } from '../../../hooks';
 
-
 export default function Textarea(props) {
-
   const {
     id,
     label,

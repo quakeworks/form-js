@@ -9,6 +9,7 @@ import Text from './form-fields/Text';
 import Textfield from './form-fields/Textfield';
 
 import Bool from './form-fields/Bool';
+import Content from './form-fields/Content';
 
 export {
   Button,
@@ -20,7 +21,8 @@ export {
   Select,
   Text,
   Textfield,
-  Bool
+  Bool,
+  Content
 };
 
 export const formFields = [
@@ -32,5 +34,7 @@ export const formFields = [
   Select,
   Text,
   Textfield,
-  Bool
+
+  Bool,
+  Content
 ];
