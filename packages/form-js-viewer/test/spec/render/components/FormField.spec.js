@@ -5,7 +5,7 @@ import {
 
 import FormField from 'src/render/components/FormField';
 
-import Textfield from 'src/render/components/form-fields/Textfield';
+import Textfield from 'src/render/components/form-fields/String';
 
 import { FormContext } from 'src/render/context';
 

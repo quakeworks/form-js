@@ -5,8 +5,7 @@ import FormComponent from './FormComponent';
 import Number from './form-fields/Number';
 import Radio from './form-fields/Radio';
 import Select from './form-fields/Select';
-import Text from './form-fields/Text';
-import Textfield from './form-fields/Textfield';
+import String from './form-fields/String';
 
 import Bool from './form-fields/Bool';
 import Content from './form-fields/Content';
@@ -19,8 +18,7 @@ export {
   Number,
   Radio,
   Select,
-  Text,
-  Textfield,
+  String,
   Bool,
   Content
 };
@@ -32,9 +30,8 @@ export const formFields = [
   Number,
   Radio,
   Select,
-  Text,
-  Textfield,
 
+  String,
   Bool,
   Content
 ];

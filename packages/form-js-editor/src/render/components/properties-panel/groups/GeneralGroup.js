@@ -30,6 +30,10 @@ export default function GeneralGroup(field, editField) {
     entries.push(<IdEntry editField={ editField } field={ field } />);
   }
 
+  if (type === 'String') {
+    entries.push(<IdEntry editField={ editField } field={ field } />);
+  }
+
   if (type === 'Number') {
     entries.push(<IdEntry editField={ editField } field={ field } />);
   }

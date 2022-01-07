@@ -11,10 +11,10 @@ import {
   prefixId
 } from '../Util';
 
-const type = 'textfield';
+const type = 'String';
 
 
-export default function Textfield(props) {
+export default function String(props) {
   const {
     disabled,
     errors = [],
@@ -57,12 +57,12 @@ export default function Textfield(props) {
   </div>;
 }
 
-Textfield.create = function(options = {}) {
+String.create = function(options = {}) {
   return {
     ...options
   };
 };
 
-Textfield.type = type;
-Textfield.label = 'Text Field';
-Textfield.keyed = true;
+String.type = type;
+String.label = 'Text Field';
+String.keyed = true;

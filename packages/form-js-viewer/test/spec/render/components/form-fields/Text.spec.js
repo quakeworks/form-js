@@ -1,6 +1,6 @@
 import { render } from '@testing-library/preact/pure';
 
-import Text from '../../../../../src/render/components/form-fields/Text';
+import String from '../../../../../src/render/components/form-fields/String';
 
 import { createFormContainer } from '../../../../TestHelper';
 
@@ -121,12 +121,12 @@ Some _em_ **strong** [text](#text) \`code\`.
   it('#create', function() {
 
     // assume
-    expect(Text.type).to.eql('text');
-    expect(Text.label).not.to.exist;
-    expect(Text.keyed).to.be.false;
+    expect(String.type).to.eql('text');
+    expect(String.label).not.to.exist;
+    expect(String.keyed).to.be.false;
 
     // when
-    const field = Text.create();
+    const field = String.create();
 
     // then
     expect(field).to.eql({
@@ -134,7 +134,7 @@ Some _em_ **strong** [text](#text) \`code\`.
     });
 
     // but when
-    const customField = Text.create({
+    const customField = String.create({
       custom: true
     });
 
@@ -164,7 +164,7 @@ function createText(options = {}) {
   } = options;
 
   return render(
-    <Text
+    <String
       disabled={ disabled }
       errors={ errors }
       field={ field }

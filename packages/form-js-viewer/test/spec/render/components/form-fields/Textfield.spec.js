@@ -3,7 +3,7 @@ import {
   render
 } from '@testing-library/preact/pure';
 
-import Textfield from '../../../../../src/render/components/form-fields/Textfield';
+import String from '../../../../../src/render/components/form-fields/String';
 
 import { createFormContainer } from '../../../../TestHelper';
 
@@ -14,7 +14,7 @@ const spy = sinon.spy;
 let container;
 
 
-describe('Textfield', function() {
+describe('String', function() {
 
   beforeEach(function() {
     container = createFormContainer();
@@ -78,10 +78,10 @@ describe('Textfield', function() {
 
     const options = { container: container.querySelector('.fjs-form') };
 
-    const { rerender } = render(<Textfield { ...props } value={ 'John Doe Company' } />, options);
+    const { rerender } = render(<String { ...props } value={ 'John Doe Company' } />, options);
 
     // when
-    rerender(<Textfield { ...props } value={ undefined } />, options);
+    rerender(<String { ...props } value={ undefined } />, options);
 
     // then
     const input = container.querySelector('input[type="text"]');
@@ -177,18 +177,18 @@ describe('Textfield', function() {
   it('#create', function() {
 
     // assume
-    expect(Textfield.type).to.eql('textfield');
-    expect(Textfield.label).to.eql('Text Field');
-    expect(Textfield.keyed).to.be.true;
+    expect(String.type).to.eql('textfield');
+    expect(String.label).to.eql('Text Field');
+    expect(String.keyed).to.be.true;
 
     // when
-    const field = Textfield.create();
+    const field = String.create();
 
     // then
     expect(field).to.eql({});
 
     // but when
-    const customField = Textfield.create({
+    const customField = String.create({
       custom: true
     });
 
@@ -220,7 +220,7 @@ function createTextfield(options = {}) {
   } = options;
 
   return render(WithFormContext(
-    <Textfield
+    <String
       disabled={ disabled }
       errors={ errors }
       field={ field }

@@ -4,10 +4,21 @@
   "components": [
     {
       "id": "Bool_1",
-      "description": "Checkbox",
-      "key": "bool",
+      "description": "Bool",
       "label": "is a demo bool",
       "type": "Bool"
+    },
+    {
+      "id": "Title",
+      "description": "Entry title",
+      "label": "title",
+      "type": "String"
+    },
+    {
+      "id": "Content",
+      "description": "Entry Content",
+      "label": "Content",
+      "type": "Content"
     }
   ]
 }

@@ -1,7 +1,3 @@
-export { default as Number } from './NumberInput';
-export { default as Bool } from './CheckboxInput';
-export { default as Content } from './Textarea';
-
 export { default as CheckboxInput } from './CheckboxInput';
 export { default as NumberInput } from './NumberInput';
 export { default as Select } from './Select';

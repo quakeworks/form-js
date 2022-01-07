@@ -28,7 +28,8 @@ const labelsByType = {
 
   // todo: modifier
   Number: 'Number',
-  Content: 'Content'
+  Content: 'Content',
+  String: 'String'
 };
 
 function getGroups(field, editField) {
