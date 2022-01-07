@@ -4,7 +4,7 @@ import {
   inject
 } from 'test/TestHelper';
 
-import { clone } from '@bpmn-io/form-js-viewer';
+import { clone } from '@quakeworks/form-js-viewer';
 
 import schema from '../form.json';
 import schemaNoIds from '../form-no-ids.json';

@@ -4,7 +4,7 @@ import {
   Form,
   FormEditor,
   schemaVersion
-} from '@bpmn-io/form-js';
+} from '@quakeworks/form-js';
 
 
 /**

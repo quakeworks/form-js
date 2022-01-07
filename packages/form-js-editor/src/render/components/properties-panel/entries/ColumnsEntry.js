@@ -1,4 +1,4 @@
-import { Default } from '@bpmn-io/form-js-viewer';
+import { Default } from '@quakeworks/form-js-viewer';
 
 import { NumberInputEntry } from '../components';
 

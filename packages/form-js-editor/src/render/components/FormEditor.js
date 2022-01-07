@@ -11,7 +11,7 @@ import {
   FormComponent,
   FormContext,
   FormRenderContext
-} from '@bpmn-io/form-js-viewer';
+} from '@quakeworks/form-js-viewer';
 
 import useService from '../hooks/useService';
 

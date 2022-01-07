@@ -56,7 +56,7 @@ export default [
       'preact/hooks',
       'preact/compat',
       'dragula',
-      '@bpmn-io/form-js-viewer'
+      '@quakeworks/form-js-viewer'
     ],
     plugins: pgl([
       copy({

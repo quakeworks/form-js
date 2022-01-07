@@ -1,4 +1,4 @@
-# @bpmn-io/form-js-editor
+# @quakeworks/form-js-editor
 
 An editor to create forms that can be displayed with the [form-js viewer](../form-js-viewer).
 
@@ -6,14 +6,14 @@ An editor to create forms that can be displayed with the [form-js viewer](../for
 ## Installation
 
 ```
-npm install @bpmn-io/form-js-editor
+npm install @quakeworks/form-js-editor
 ```
 
 
 ## Usage
 
 ```javascript
-import { FormEditor } from '@bpmn-io/form-js-editor';
+import { FormEditor } from '@quakeworks/form-js-editor';
 
 const schema = {
   components: [
@@ -45,9 +45,9 @@ For proper styling include the necessary stylesheets, and font used:
 ```html
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.2.3/dist/assets/form-js.css">
-<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.2.3/dist/assets/form-js-editor.css">
-<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@0.2.3/dist/assets/dragula.css">
+<link rel="stylesheet" href="https://unpkg.com/@quakeworks/form-js@0.2.3/dist/assets/form-js.css">
+<link rel="stylesheet" href="https://unpkg.com/@quakeworks/form-js@0.2.3/dist/assets/form-js-editor.css">
+<link rel="stylesheet" href="https://unpkg.com/@quakeworks/form-js@0.2.3/dist/assets/dragula.css">
 ```
 
 
@@ -58,7 +58,7 @@ For proper styling include the necessary stylesheets, and font used:
 Create a new form editor with options `{ container?: HTMLElement }`.
 
 ```javascript
-import { FormEditor } from '@bpmn-io/form-js-editor';
+import { FormEditor } from '@quakeworks/form-js-editor';
 
 const formEditor = new FormEditor({
   container: document.querySelector('#form-editor')

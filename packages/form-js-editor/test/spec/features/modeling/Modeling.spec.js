@@ -1,4 +1,4 @@
-import { clone } from '@bpmn-io/form-js-viewer';
+import { clone } from '@quakeworks/form-js-viewer';
 
 import {
   bootstrapFormEditor,

@@ -27,7 +27,7 @@ ___Note:__ Yet to be released changes appear here._
 
 ### Playground
 
-_Initial public release of the `@bpmn-io/form-js-playground` :tada:._
+_Initial public release of the `@quakeworks/form-js-playground` :tada:._
 
 ## 0.4.4
 

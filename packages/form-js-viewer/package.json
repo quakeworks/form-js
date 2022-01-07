@@ -1,5 +1,5 @@
 {
-  "name": "@bpmn-io/form-js-viewer",
+  "name": "@quakeworks/form-js-viewer",
   "version": "0.5.1",
   "description": "View forms - powered by bpmn.io",
   "exports": {
@@ -38,7 +38,7 @@
     "url": "https://github.com/bpmn-io"
   },
   "dependencies": {
-    "@bpmn-io/snarkdown": "^2.1.0",
+    "@quakeworks/snarkdown": "^2.1.0",
     "didi": "^5.2.1",
     "ids": "^1.0.0",
     "min-dash": "^3.7.0",

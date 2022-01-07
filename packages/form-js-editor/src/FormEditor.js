@@ -10,7 +10,7 @@ import {
   clone,
   createFormContainer,
   schemaVersion
-} from '@bpmn-io/form-js-viewer';
+} from '@quakeworks/form-js-viewer';
 
 import core from './core';
 

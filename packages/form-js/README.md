@@ -1,4 +1,4 @@
-# @bpmn-io/form-js
+# @quakeworks/form-js
 
 [![CI](https://github.com/bpmn-io/form-js/workflows/CI/badge.svg)](https://github.com/bpmn-io/form-js/actions?query=workflow%3ACI)
 
@@ -15,7 +15,7 @@ This library exports a [form viewer](./packages/form-js-viewer) and [editor](./p
 Renders a form based on [a form schema](./docs/FORM_SCHEMA.md) and existing data:
 
 ```javascript
-import { Form } from '@bpmn-io/form-js';
+import { Form } from '@quakeworks/form-js';
 
 const form = new Form({
   container: document.querySelector('#form')
@@ -36,7 +36,7 @@ See [viewer documentation](./packages/form-js-viewer) for further details.
 Create a new form or edit an exsting one:
 
 ```javascript
-import { FormEditor } from '@bpmn-io/form-js';
+import { FormEditor } from '@quakeworks/form-js';
 
 const formEditor = new FormEditor({
   container: document.querySelector('#form-editor')

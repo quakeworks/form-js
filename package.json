@@ -1,14 +1,14 @@
 {
-  "name": "form-js",
+  "name": "@quakeworks/form-js",
   "scripts": {
     "all": "run-s lint build lint:types test test:distro",
     "build-distro": "lerna run prepublishOnly --sort",
     "clean": "del-cli \"{node_modules,dist}\" \"packages/*/{node_modules,dist}\"",
     "distro": "run-s clean reinstall build-distro",
     "dev": "run-s build \"lerna-dev -- {@}\" -- ",
-    "dev:viewer": "npm run dev -- @bpmn-io/form-js-viewer",
-    "dev:editor": "npm run dev -- @bpmn-io/form-js-editor",
-    "dev:playground": "npm run dev -- @bpmn-io/form-js-playground",
+    "dev:viewer": "npm run dev -- @quakeworks/form-js-viewer",
+    "dev:editor": "npm run dev -- @quakeworks/form-js-editor",
+    "dev:playground": "npm run dev -- @quakeworks/form-js-playground",
     "lerna-dev": "lerna run dev --stream --scope",
     "build": "lerna run build --sort --stream",
     "lerna-publish": "lerna publish -m \"chore(project): publish %s\"",
@@ -21,10 +21,10 @@
     "test:distro": "lerna run test:distro",
     "ci": "run-s all build-distro",
     "start:pkg": "cross-env SINGLE_START=basic npm run dev --",
-    "start": "npm run start:pkg -- @bpmn-io/form-js",
-    "start:viewer": "npm run start:pkg -- @bpmn-io/form-js-viewer",
-    "start:editor": "npm run start:pkg -- @bpmn-io/form-js-editor",
-    "start:playground": "npm run start:pkg -- @bpmn-io/form-js-playground"
+    "start": "npm run start:pkg -- @quakeworks/form-js",
+    "start:viewer": "npm run start:pkg -- @quakeworks/form-js-viewer",
+    "start:editor": "npm run start:pkg -- @quakeworks/form-js-editor",
+    "start:playground": "npm run start:pkg -- @quakeworks/form-js-playground"
   },
   "repository": {
     "type": "git",
