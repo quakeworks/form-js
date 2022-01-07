@@ -30,13 +30,13 @@ describe('form-viewer', function() {
       type: 'default',
       components: [
         {
-          type: 'text',
+          type: 'String',
           text: 'Apply for a loan'
         },
         {
           key: 'creditor',
           label: 'Creditor',
-          type: 'textfield',
+          type: 'String',
           validate: {
             required: true
           }
