@@ -1,7 +1,4 @@
 import FormField from './FormField';
-
-import PoweredBy from './PoweredBy';
-
 import useService from '../hooks/useService';
 
 const noop = () => {};
@@ -39,8 +36,6 @@ export default function FormComponent(props) {
         field={ schema }
         onChange={ onChange }
       />
-
-      <PoweredBy />
     </form>
   );
 }

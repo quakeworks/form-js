@@ -27,7 +27,7 @@ const labelsByType = {
   textfield: 'TEXT FIELD',
 
   // todo: modifier
-  Number: 'Number',
+  Number: 'NUMBER',
 };
 
 function getGroups(field, editField) {
