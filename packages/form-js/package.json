@@ -1,6 +1,6 @@
 {
   "name": "@quakeworks/form-js",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "View and edit forms - powered by bpmn.io",
   "exports": {
     ".": {
@@ -50,8 +50,8 @@
     "url": "https://github.com/bpmn-io"
   },
   "dependencies": {
-    "@quakeworks/form-js-editor": "^0.5.1",
-    "@quakeworks/form-js-viewer": "^0.5.1"
+    "@quakeworks/form-js-editor": "^0.6.0",
+    "@quakeworks/form-js-viewer": "^0.6.0"
   },
   "sideEffects": [
     "*.css"
