@@ -61,7 +61,7 @@ describe('FormEditor', function() {
     });
 
     // then
-    expect(formEditor.get('formFieldRegistry').getAll()).to.have.length(11);
+    expect(formEditor.get('formFieldRegistry').getAll()).to.have.length(4);
   });
 
 

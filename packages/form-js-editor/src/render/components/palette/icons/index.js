@@ -1,13 +1,11 @@
-import ButtonIcon from './Button.svg';
 import CheckboxIcon from './Checkbox.svg';
 import FormIcon from './Form.svg';
 import ColumnsIcon from './Group.svg';
 import NumberIcon from './Number.svg';
 import RadioIcon from './Radio.svg';
-import SelectIcon from './Select.svg';
 import TextIcon from './Text.svg';
-import TextfieldIcon from './Textfield.svg';
 import TextareaIcon from './Textarea.svg';
+import DateIcon from './Date.svg';
 
 export const iconsByType = {
   Content: TextareaIcon,
@@ -15,14 +13,11 @@ export const iconsByType = {
   Flow: RadioIcon,
   Bool: CheckboxIcon,
   Number: NumberIcon,
+  Date: DateIcon,
 
-  button: ButtonIcon,
-  checkbox: CheckboxIcon,
+  File: TextIcon,
+  Attachment: TextIcon,
+
   columns: ColumnsIcon,
-  number: NumberIcon,
-  radio: RadioIcon,
-  select: SelectIcon,
-  text: TextIcon,
-  textfield: TextfieldIcon,
   default: FormIcon,
 };
