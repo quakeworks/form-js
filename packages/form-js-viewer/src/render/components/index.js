@@ -3,6 +3,7 @@ import Checkbox from './form-fields/Checkbox';
 import Default from './form-fields/Default';
 import FormComponent from './FormComponent';
 import Select from './form-fields/Select';
+import Text from './form-fields/Text';
 
 import Number from './form-fields/Number';
 import Radio from './form-fields/Radio';
@@ -29,6 +30,7 @@ export {
   Date,
   File,
   Attachment,
+    Text,
 };
 
 export const formFields = [
@@ -46,4 +48,5 @@ export const formFields = [
   Date,
   File,
   Attachment,
+  Text
 ];
