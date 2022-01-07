@@ -25,6 +25,9 @@ const labelsByType = {
   select: 'SELECT',
   text: 'TEXT',
   textfield: 'TEXT FIELD',
+
+  // todo: modifier
+  Number: 'Number',
 };
 
 function getGroups(field, editField) {

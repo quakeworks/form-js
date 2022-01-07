@@ -7,8 +7,15 @@ import RadioIcon from './Radio.svg';
 import SelectIcon from './Select.svg';
 import TextIcon from './Text.svg';
 import TextfieldIcon from './Textfield.svg';
+import TextareaIcon from './Textarea.svg';
 
 export const iconsByType = {
+  Content: TextareaIcon,
+  String: TextIcon,
+  Flow: RadioIcon,
+  Bool: CheckboxIcon,
+  Number: NumberIcon,
+
   button: ButtonIcon,
   checkbox: CheckboxIcon,
   columns: ColumnsIcon,
@@ -17,5 +24,5 @@ export const iconsByType = {
   select: SelectIcon,
   text: TextIcon,
   textfield: TextfieldIcon,
-  default: FormIcon
+  default: FormIcon,
 };

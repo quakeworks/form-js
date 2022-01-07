@@ -2,32 +2,36 @@ import { iconsByType } from './icons';
 
 const types = [
   {
-    label: 'Text Field',
-    type: 'textfield'
+    label: 'String',
+    type: 'String'
   },
   {
     label: 'Number',
-    type: 'number'
+    type: 'Number'
   },
   {
-    label: 'Checkbox',
-    type: 'checkbox'
+    label: 'Bool',
+    type: 'Bool'
   },
   {
-    label: 'Radio',
-    type: 'radio'
+    label: 'Flow',
+    type: 'Flow'
   },
   {
-    label: 'Select',
-    type: 'select'
+    label: 'Content',
+    type: 'Content'
   },
   {
-    label: 'Text',
-    type: 'text'
+    label: 'Date',
+    type: 'Date'
   },
   {
-    label: 'Button',
-    type: 'button'
+    label: 'File',
+    type: 'File'
+  },
+  {
+    label: 'Attachment',
+    type: 'Attachment'
   }
 ];
 
