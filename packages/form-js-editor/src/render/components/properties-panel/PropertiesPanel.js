@@ -32,7 +32,7 @@ function getGroups(field, editField) {
     GeneralGroup(field, editField)
   ];
 
-  if (type === 'radio' || type === 'select') {
+  if (type === 'Flow') {
     groups.push(ValuesGroup(field, editField));
   }
 

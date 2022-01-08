@@ -28,7 +28,7 @@ export default function GeneralGroup(field, editField) {
     entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
-  if (type === 'Number' || type === 'File' || type === 'Date' || type === 'Attachment' || type === 'Flow') {
+  if (type === 'Number' || type === 'File' || type === 'Date' || type === 'Attachment') {
     entries.push(<KeyEntry editField={ editField } field={ field } />);
   }
 
