@@ -37,7 +37,6 @@ export default class Modeling {
   }
 
   addFormField(attrs, targetFormField, targetIndex) {
-    console.log(attrs);
     const formField = this._fieldFactory.create(attrs);
 
     const context = {
